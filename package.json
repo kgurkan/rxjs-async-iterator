@@ -1,10 +1,38 @@
 {
   "name": "rxjs-async-iterator",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "Converts async iterators from RxJS observables to consume in for-await-of loops",
+  "license": "Apache-2.0",
+  "author": "Kaan Gürkan <kaangrkn@gmail.com>",
+  "main": "./dist/index.js",
+  "typings": "./dist/types/index.d.ts",
+  "sideEffects": false,
+  "keywords": [
+    "Rx",
+    "RxJS",
+    "ReactiveX",
+    "ReactiveExtensions",
+    "Iterator",
+    "Async Iterator",
+    "Observable",
+    "Observables",
+    "ES2018"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kgurkan/rxjs-async-iterator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kgurkan/rxjs-async-iterator/issues"
+  },
   "scripts": {
     "test": "jest",
+    "prepack": "npm test && npm run build",
     "prebuild": "rimraf build",
     "build": "tsc -p tsconfig.build.json",
     "lint": "tslint",
