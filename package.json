@@ -1,0 +1,44 @@
+{
+  "name": "rxjs-async-iterator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "prebuild": "rimraf build",
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tslint",
+    "precommit": "lint-staged"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.27",
+    "@types/jest": "^24.0.15",
+    "bluebird": "^3.5.5",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.5.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.@(ts)": [
+        "tslint --fix",
+        "git add"
+      ]
+    }
+  }
+}

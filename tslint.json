@@ -1,0 +1,22 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "object-literal-sort-keys": false,
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ]
+  }
+}

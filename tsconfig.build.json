@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": false,
+    "target": "es2018"
+  },
+  "exclude": [
+    "./dist",
+    "./src/**/*.spec.ts"
+  ]
+}
