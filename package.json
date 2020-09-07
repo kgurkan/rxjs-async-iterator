@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "author": "Kaan Gürkan <kaangrkn@gmail.com>",
   "main": "./dist/index.js",
-  "typings": "./dist/types/index.d.ts",
+  "types": "./dist/index.d.ts",
   "sideEffects": false,
   "keywords": [
     "Rx",
